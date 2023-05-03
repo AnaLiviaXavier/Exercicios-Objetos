@@ -1,4 +1,4 @@
-/* const pessoa = {
+ const pessoa = {
     nome: 'Fulano',
     idade: 30,
     email: 'fulano@gmail.com',
@@ -24,7 +24,7 @@ console.log(pessoa['email'])
 
 
 
-const filme = {
+const filme1 = {
     direcao: 'Fulano da Silva',
     nome: 'Jurassic Dark',
     ano: 2023,
@@ -33,13 +33,15 @@ const filme = {
     avaliacao: 9.9
 }
 
-console.log('Direção: '+ filme.direcao+
-    '\n Nome: '+ filme.nome+
-    '\n Ano de lançamento: '+ filme.ano)
+console.log('Direção: '+ filme1.direcao+
+    '\n Nome: '+ filme1.nome+
+    '\n Ano de lançamento: '+ filme1.ano)
 
-console.log('Elenco: '+filme.elenco[1]+
-    '\n Já visto: '+ filme['visto']+
-    '\n Avaliação:'+ filme['avaliacao'])
+console.log('Elenco: '+filme1.elenco[1]+
+    '\n Já visto: '+ filme1['visto']+
+    '\n Avaliação:'+ filme1['avaliacao'])
+
+
 
 const person = {
     name: 'Orizco',
@@ -74,9 +76,11 @@ curso['cargaHoraria'] = 70
 
 console.log(curso.cargaHoraria)
 
-*/
 
 
+
+
+// filme alterado
 const filme = {
     direcao: 'Fulano da Silva',
     nome: 'Jurassic Dark',
@@ -115,6 +119,8 @@ console.log(filme)
 
 
 
+
+
 // filme alterado
 const filme2 = {
     direcao: 'Fulano da Silva',
@@ -129,3 +135,45 @@ const filme2 = {
 }
 
 console.log(filme2.elenco[2].ator + ' como '+ filme2.elenco[2].personagem)
+
+const usuario ={
+    nome: 'Jojo',
+    email: 'jojo@gmail.com',
+    idade:50
+}
+
+const novoUsuario ={
+    ...usuario
+}
+
+console.log(novoUsuario)
+
+
+
+
+
+// exercicio 4
+
+const pessoa1 = {
+    nome:'João',
+    
+}
+
+funcaoExercicio = function(objeto) {
+    
+
+    const novaPessoa1 = {
+        ...pessoa1,
+        comidasPreferidas: ['chá', 'bolacha', 'suco'],
+        melhorAmigo: {
+            nome: 'José',
+            idade: 55
+        }
+    }
+
+    console.log('O nome da pessoa é ' + pessoa1.nome+ ', suas comidas preferidas são '+
+    novaPessoa1.comidasPreferidas[0]+ ', '+ novaPessoa1.comidasPreferidas[1]+" e "+novaPessoa1.comidasPreferidas[2]+
+    ',  seu melhor amigo se chama '+novaPessoa1.melhorAmigo.nome + ' que tem '+ novaPessoa1.melhorAmigo.idade + ' anos.')
+}
+
+funcaoExercicio(pessoa1)
