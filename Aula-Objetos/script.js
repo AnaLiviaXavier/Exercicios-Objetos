@@ -170,8 +170,9 @@ funcaoExercicio = function(objeto) {
             idade: 55
         }
     }
+    
 
-    console.log('O nome da pessoa é ' + pessoa1.nome+ ', suas comidas preferidas são '+
+    console.log('O nome da pessoa é ' + novaPessoa1.nome+ ', suas comidas preferidas são '+
     novaPessoa1.comidasPreferidas[0]+ ', '+ novaPessoa1.comidasPreferidas[1]+" e "+novaPessoa1.comidasPreferidas[2]+
     ',  seu melhor amigo se chama '+novaPessoa1.melhorAmigo.nome + ' que tem '+ novaPessoa1.melhorAmigo.idade + ' anos.')
 }
